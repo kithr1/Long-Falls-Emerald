@@ -443,6 +443,7 @@ void BattleSetup_StartBattlePikeWildBattle(void)
 
 static void DoStandardWildBattle(bool32 isDouble)
 {
+    FlagClear(B_FLAG_NO_BAG_USE);
     LockPlayerFieldControls();
     FreezeObjectEvents();
     StopPlayerAvatar();
@@ -464,6 +465,7 @@ static void DoStandardWildBattle(bool32 isDouble)
 
 void DoStandardWildBattle_Debug(void)
 {
+    FlagClear(B_FLAG_NO_BAG_USE);
     LockPlayerFieldControls();
     FreezeObjectEvents();
     StopPlayerAvatar();
@@ -483,6 +485,7 @@ void DoStandardWildBattle_Debug(void)
 
 void BattleSetup_StartRoamerBattle(void)
 {
+    FlagClear(B_FLAG_NO_BAG_USE);
     LockPlayerFieldControls();
     FreezeObjectEvents();
     StopPlayerAvatar();
@@ -497,6 +500,7 @@ void BattleSetup_StartRoamerBattle(void)
 
 static void DoSafariBattle(void)
 {
+    FlagClear(B_FLAG_NO_BAG_USE);
     LockPlayerFieldControls();
     FreezeObjectEvents();
     StopPlayerAvatar();
@@ -507,6 +511,7 @@ static void DoSafariBattle(void)
 
 static void DoBattlePikeWildBattle(void)
 {
+    FlagClear(B_FLAG_NO_BAG_USE);
     LockPlayerFieldControls();
     FreezeObjectEvents();
     StopPlayerAvatar();
@@ -551,6 +556,7 @@ void StartWallyTutorialBattle(void)
 
 void BattleSetup_StartScriptedWildBattle(void)
 {
+    FlagClear(B_FLAG_NO_BAG_USE);
     LockPlayerFieldControls();
     gMain.savedCallback = CB2_EndScriptedWildBattle;
     gBattleTypeFlags = 0;
@@ -563,6 +569,7 @@ void BattleSetup_StartScriptedWildBattle(void)
 
 void BattleSetup_StartScriptedDoubleWildBattle(void)
 {
+    FlagClear(B_FLAG_NO_BAG_USE);
     LockPlayerFieldControls();
     gMain.savedCallback = CB2_EndScriptedWildBattle;
     gBattleTypeFlags = BATTLE_TYPE_DOUBLE;
@@ -575,6 +582,7 @@ void BattleSetup_StartScriptedDoubleWildBattle(void)
 
 void BattleSetup_StartLatiBattle(void)
 {
+    FlagClear(B_FLAG_NO_BAG_USE);
     LockPlayerFieldControls();
     gMain.savedCallback = CB2_EndScriptedWildBattle;
     gBattleTypeFlags = BATTLE_TYPE_LEGENDARY;
@@ -587,6 +595,7 @@ void BattleSetup_StartLatiBattle(void)
 
 void BattleSetup_StartLegendaryBattle(void)
 {
+    FlagClear(B_FLAG_NO_BAG_USE);
     LockPlayerFieldControls();
     gMain.savedCallback = CB2_EndScriptedWildBattle;
     gBattleTypeFlags = BATTLE_TYPE_LEGENDARY;
@@ -629,6 +638,7 @@ void BattleSetup_StartLegendaryBattle(void)
 
 void StartGroudonKyogreBattle(void)
 {
+    FlagClear(B_FLAG_NO_BAG_USE);
     LockPlayerFieldControls();
     gMain.savedCallback = CB2_EndScriptedWildBattle;
     gBattleTypeFlags = BATTLE_TYPE_LEGENDARY;
@@ -646,6 +656,7 @@ void StartGroudonKyogreBattle(void)
 
 void StartRegiBattle(void)
 {
+    FlagClear(B_FLAG_NO_BAG_USE);
     u8 transitionId;
     u16 species;
 
@@ -694,6 +705,7 @@ static void CB2_EndWildBattle(void)
 {
     CpuFill16(0, (void *)(BG_PLTT), BG_PLTT_SIZE);
     ResetOamRange(0, 128);
+    FlagSet(B_FLAG_NO_BAG_USE);
 
     if (IsPlayerDefeated(gBattleOutcome) == TRUE && !InBattlePyramid() && !InBattlePike())
     {
@@ -709,6 +721,7 @@ static void CB2_EndWildBattle(void)
 
 static void CB2_EndScriptedWildBattle(void)
 {
+    FlagSet(B_FLAG_NO_BAG_USE);
     CpuFill16(0, (void *)(BG_PLTT), BG_PLTT_SIZE);
     ResetOamRange(0, 128);
 
