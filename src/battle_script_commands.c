@@ -62,6 +62,7 @@
 #include "battle_util.h"
 #include "constants/pokemon.h"
 #include "config/battle.h"
+#include "level_caps.h"
 
 // Helper for accessing command arguments and advancing gBattlescriptCurrInstr.
 //
@@ -4205,14 +4206,14 @@ static void Cmd_getexp(void)
                 if (IsValidForBattle(&gPlayerParty[*expMonId]))
                 {
                     if (wasSentOut)
-                        gBattleMoveDamage = gBattleStruct->expValue;
+                        gBattleMoveDamage = GetSoftLevelCapExpValue(gPlayerParty[*expMonId].level, gBattleStruct->expValue);
                     else
                         gBattleMoveDamage = 0;
 
                     if ((holdEffect == HOLD_EFFECT_EXP_SHARE || IsGen6ExpShareEnabled())
                         && (B_SPLIT_EXP < GEN_6 || gBattleMoveDamage == 0)) // only give exp share bonus in later gens if the mon wasn't sent out
                     {
-                        gBattleMoveDamage += gBattleStruct->expShareExpValue;
+                        gBattleMoveDamage += GetSoftLevelCapExpValue(gPlayerParty[*expMonId].level, gBattleStruct->expShareExpValue);
                     }
 
                     ApplyExperienceMultipliers(&gBattleMoveDamage, *expMonId, gBattlerFainted);
@@ -4255,6 +4256,7 @@ static void Cmd_getexp(void)
 
                     if (wasSentOut || holdEffect == HOLD_EFFECT_EXP_SHARE)
                     {
+                        if (GetMonData(&gPlayerParty[*expMonId], MON_DATA_LEVEL) < GetCurrentLevelCap())
                         PrepareStringBattle(STRINGID_PKMNGAINEDEXP, gBattleStruct->expGetterBattlerId);
                     }
                     else if (IsGen6ExpShareEnabled() && !gBattleStruct->teamGotExpMsgPrinted) // Print 'the rest of your team got exp' message once, when all of the sent-in mons were given experience
