@@ -75,5 +75,5 @@ void SetWaldaPhrase(const u8 *src);
 bool32 IsWaldaPhraseEmpty(void);
 
 void EnterPokeStorage(u8 boxOption);
-
+void EnterPokeStorage(u8);
 #endif // GUARD_POKEMON_STORAGE_SYSTEM_H
