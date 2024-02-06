@@ -3254,32 +3254,58 @@ static const struct TrainerMon sParty_Brawly1[] = {
 
 static const struct TrainerMon sParty_Wattson1[] = {
     {
-    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .iv = TRAINER_PARTY_IVS(31, 30, 31, 30, 31, 30),
     .lvl = 16,
+    .nature = NATURE_TIMID,
     .species = SPECIES_CHINCHOU,
+    .ability = ABILITY_VOLT_ABSORB,
     .heldItem = ITEM_RINDO_BERRY,
     .moves = {MOVE_WATER_PULSE, MOVE_DISCHARGE, MOVE_HIDDEN_POWER, MOVE_ICY_WIND}
     },
     {
+    .iv = TRAINER_PARTY_IVS(31, 30, 30, 31, 31, 31),
+    .lvl = 17,
+    .nature = NATURE_RASH,
+    .species = SPECIES_MAGNEMITE,
+    .ability = ABILITY_ANALYTIC,
+    .heldItem = ITEM_IRON_BALL,
+    .moves = {MOVE_MAGNET_BOMB, MOVE_DISCHARGE, MOVE_HIDDEN_POWER, MOVE_THUNDER_WAVE}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 30, 30, 31, 31, 31),
+    .lvl = 17,
+    .nature = NATURE_LONELY,
+    .species = SPECIES_VOLTORB_HISUIAN,
+    .ability = ABILITY_AFTERMATH,
+    .heldItem = ITEM_ROCKY_HELMET,
+    .moves = {MOVE_GIGA_DRAIN, MOVE_DISCHARGE, MOVE_HIDDEN_POWER, MOVE_SELF_DESTRUCT}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 16,
+    .nature = NATURE_IMPISH,
+    .species = SPECIES_STUNFISK,
+    .ability = ABILITY_STATIC,
+    .heldItem = ITEM_AIR_BALLOON,
+    .moves = {MOVE_DISCHARGE, MOVE_MUD_BOMB, MOVE_SLUDGE_BOMB, MOVE_WATER_PULSE}
+    },
+    {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 17,
-    .species = SPECIES_ELECTRIKE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SHOCK_WAVE, MOVE_LEER, MOVE_QUICK_ATTACK, MOVE_HOWL}
-    },
+    .nature = NATURE_BOLD,
+    .species = SPECIES_FLAAFFY,
+    .ability = ABILITY_STATIC,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_SEISMIC_TOSS, MOVE_REST, MOVE_SLEEP_TALK, MOVE_HEAL_BELL}
+    },    
     {
-    .iv = TRAINER_PARTY_IVS(26, 26, 26, 26, 26, 26),
-    .lvl = 22,
-    .species = SPECIES_MAGNETON,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SUPERSONIC, MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_SONIC_BOOM}
-    },
-    {
-    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 24,
-    .species = SPECIES_MANECTRIC,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_QUICK_ATTACK, MOVE_THUNDER_WAVE, MOVE_SHOCK_WAVE, MOVE_HOWL}
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 18,
+    .nature = NATURE_NAIVE,
+    .species = SPECIES_PACHIRISU,
+    .ability = ABILITY_CHEEK_POUCH,
+    .heldItem = ITEM_SALAC_BERRY,
+    .moves = {MOVE_ELECTRO_BALL, MOVE_SEED_BOMB, MOVE_MUD_SHOT, MOVE_NUZZLE}
     }
 };
 
