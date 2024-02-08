@@ -3254,7 +3254,7 @@ static const struct TrainerMon sParty_Brawly1[] = {
 
 static const struct TrainerMon sParty_Wattson1[] = {
     {
-    .iv = TRAINER_PARTY_IVS(31, 30, 31, 30, 31, 30),
+    .iv = TRAINER_PARTY_IVS(31, 30, 31, 31, 30, 30),
     .lvl = 16,
     .nature = NATURE_TIMID,
     .species = SPECIES_CHINCHOU,
@@ -6440,8 +6440,9 @@ static const struct TrainerMon sParty_WallyVR1[] = {
 
 static const struct TrainerMon sParty_BrendanRoute103Mudkip[] = {
     {
-    .lvl = 5,
-    .species = SPECIES_TREECKO,
+    .lvl = 7,
+    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+    .species = SPECIES_CHESPIN,
     }
 };
 
@@ -6483,8 +6484,9 @@ static const struct TrainerMon sParty_BrendanRoute119Mudkip[] = {
 
 static const struct TrainerMon sParty_BrendanRoute103Treecko[] = {
     {
-    .lvl = 5,
-    .species = SPECIES_TORCHIC,
+    .lvl = 7,
+    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18)
+    .species = SPECIES_LITTEN,
     }
 };
 
@@ -6526,8 +6528,9 @@ static const struct TrainerMon sParty_BrendanRoute119Treecko[] = {
 
 static const struct TrainerMon sParty_BrendanRoute103Torchic[] = {
     {
-    .lvl = 5,
-    .species = SPECIES_MUDKIP,
+    .lvl = 7,
+    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+    .species = SPECIES_OSHAWOTT,
     }
 };
 
@@ -6569,8 +6572,9 @@ static const struct TrainerMon sParty_BrendanRoute119Torchic[] = {
 
 static const struct TrainerMon sParty_MayRoute103Mudkip[] = {
     {
-    .lvl = 5,
-    .species = SPECIES_TREECKO,
+    .lvl = 7,
+    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+    .species = SPECIES_CHESPIN,
     }
 };
 
@@ -6612,8 +6616,9 @@ static const struct TrainerMon sParty_MayRoute119Mudkip[] = {
 
 static const struct TrainerMon sParty_MayRoute103Treecko[] = {
     {
-    .lvl = 5,
-    .species = SPECIES_TORCHIC,
+    .lvl = 7,
+    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+    .species = SPECIES_LITTEN,
     }
 };
 
@@ -6655,8 +6660,9 @@ static const struct TrainerMon sParty_MayRoute119Treecko[] = {
 
 static const struct TrainerMon sParty_MayRoute103Torchic[] = {
     {
-    .lvl = 5,
-    .species = SPECIES_MUDKIP,
+    .lvl = 7,
+    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+    .species = SPECIES_OSHAWOTT,
     }
 };
 
