@@ -287,7 +287,11 @@ Route103_EventScript_Isabelle::
 	trainerbattle_single TRAINER_ISABELLE, Route103_Text_IsabelleIntro, Route103_Text_IsabelleDefeated
 	msgbox Route103_Text_IsabellePostBattle, MSGBOX_AUTOCLOSE
 	end
-
+Route103_EventScript_Kids::
+	lock
+	msgbox Route103_Text_RowdyChildren, MSGBOX_DEFAULT
+	release
+	end	
 Route103_Text_MayRoute103Pokemon:
 	.string "MAY: Let's see… The POKéMON found\n"
 	.string "on ROUTE 103 include…$"
@@ -353,3 +357,6 @@ Route103_Text_RouteSign:
 	.string "ROUTE 103\n"
 	.string "{DOWN_ARROW} OLDALE TOWN$"
 
+Route103_Text_RowdyChildren:
+	.string "Go, Pidgey!\p"
+	.string "You got em', Wingull!$"

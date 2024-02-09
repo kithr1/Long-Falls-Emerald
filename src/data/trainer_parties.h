@@ -6485,7 +6485,7 @@ static const struct TrainerMon sParty_BrendanRoute119Mudkip[] = {
 static const struct TrainerMon sParty_BrendanRoute103Treecko[] = {
     {
     .lvl = 7,
-    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18)
+    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .species = SPECIES_LITTEN,
     }
 };
