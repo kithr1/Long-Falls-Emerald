@@ -27,8 +27,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_2",
-      "x": 7,
-      "y": 16,
+      "x": 21,
+      "y": 19,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 1,
@@ -40,7 +40,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TWIN",
-      "x": 20,
+      "x": 30,
       "y": 1,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -53,8 +53,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_1",
-      "x": 7,
-      "y": 11,
+      "x": 17,
+      "y": 15,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
       "movement_range_x": 0,
@@ -66,8 +66,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CAMPER",
-      "x": 14,
-      "y": 7,
+      "x": 25,
+      "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 1,
@@ -80,43 +80,43 @@
   ],
   "warp_events": [
     {
-      "x": 19,
+      "x": 29,
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_VERDANTURF_TOWN_MART",
       "dest_warp_id": "0"
     },
     {
-      "x": 12,
+      "x": 22,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_VERDANTURF_TOWN_POKEMON_CENTER_1F",
       "dest_warp_id": "0"
     },
     {
-      "x": 24,
+      "x": 34,
       "y": 20,
       "elevation": 0,
       "dest_map": "MAP_VERDANTURF_TOWN_WANDAS_HOUSE",
       "dest_warp_id": "0"
     },
     {
-      "x": 19,
+      "x": 29,
       "y": 0,
       "elevation": 0,
       "dest_map": "MAP_RUSTURF_TUNNEL",
       "dest_warp_id": "1"
     },
     {
-      "x": 4,
+      "x": 14,
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_VERDANTURF_TOWN_FRIENDSHIP_RATERS_HOUSE",
       "dest_warp_id": "0"
     },
     {
-      "x": 12,
-      "y": 17,
+      "x": 37,
+      "y": 7,
       "elevation": 0,
       "dest_map": "MAP_VERDANTURF_TOWN_HOUSE",
       "dest_warp_id": "0"
@@ -128,7 +128,7 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 21,
+      "x": 31,
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
@@ -136,7 +136,7 @@
     },
     {
       "type": "sign",
-      "x": 23,
+      "x": 33,
       "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -144,7 +144,7 @@
     },
     {
       "type": "sign",
-      "x": 13,
+      "x": 23,
       "y": 5,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
@@ -152,7 +152,7 @@
     },
     {
       "type": "sign",
-      "x": 21,
+      "x": 31,
       "y": 20,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -160,7 +160,7 @@
     },
     {
       "type": "sign",
-      "x": 20,
+      "x": 30,
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
@@ -168,7 +168,7 @@
     },
     {
       "type": "sign",
-      "x": 14,
+      "x": 24,
       "y": 5,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
@@ -176,7 +176,7 @@
     },
     {
       "type": "sign",
-      "x": 18,
+      "x": 27,
       "y": 2,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
