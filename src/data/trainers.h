@@ -2916,18 +2916,17 @@ const struct Trainer gTrainers[] = {
         .party = TRAINER_PARTY(sParty_Cameron5),
     },
 
-    [TRAINER_JACLYN] =
+    [TRAINER_GRETA1] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_F,
-        .trainerName = _("JACLYN"),
+        .trainerClass = TRAINER_CLASS_ARENA_TYCOON,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_ARENA_TYCOON_GRETA,
+        .trainerName = _("GRETA"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = TRAINER_PARTY(sParty_Jaclyn),
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .party = TRAINER_PARTY(sParty_Greta1),
     },
-
     [TRAINER_HANNAH] =
     {
         .trainerClass = TRAINER_CLASS_PSYCHIC,

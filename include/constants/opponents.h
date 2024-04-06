@@ -244,7 +244,7 @@
 #define TRAINER_CAMERON_3                   240
 #define TRAINER_CAMERON_4                   241
 #define TRAINER_CAMERON_5                   242
-#define TRAINER_JACLYN                      243
+#define TRAINER_GRETA1                      243
 #define TRAINER_HANNAH                      244
 #define TRAINER_SAMANTHA                    245
 #define TRAINER_MAURA                       246
